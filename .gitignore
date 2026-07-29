@@ -5,6 +5,7 @@
 
 !/.gitignore
 !/CLAUDE.md
+!/README.md
 
 !/device-old-pc/
 !/device-old-pc/**
@@ -27,3 +28,16 @@
 
 !/core/
 !/core/**
+
+# Defesa extra: nunca versionar segredos/credenciais, mesmo dentro das pastas
+# liberadas acima (ex: secrets.yaml do Home Assistant, .env do bot Telegram).
+# Repositório é público — vale reforçar mesmo com allow-list específico acima.
+**/.env
+**/*.env
+**/secrets.yaml
+**/secrets.yml
+**/*.pem
+**/*.key
+**/id_rsa
+**/id_ed25519
+**/credentials.json

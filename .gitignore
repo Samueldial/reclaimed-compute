@@ -1,0 +1,16 @@
+# Allow-list: ignora tudo por padrão, só libera o que pertence ao projeto.
+# Isso evita rastrear acidentalmente .ssh, .cache, .claude, histórico de shell etc,
+# já que este repositório vive na home do usuário do servidor.
+/*
+
+!/.gitignore
+!/CLAUDE.md
+
+!/device-old-pc/
+!/device-old-pc/**
+
+!/device-legion-duel/
+!/device-legion-duel/**
+
+!/core/
+!/core/**

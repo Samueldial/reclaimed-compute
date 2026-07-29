@@ -3,6 +3,8 @@ services:
     image: ghcr.io/gethomepage/homepage:latest
     container_name: homepage
     restart: unless-stopped
+    environment:
+      - HOMEPAGE_ALLOWED_HOSTS=192.168.0.59:3030,localhost:3030
     ports:
       - "3030:3000"
     volumes:

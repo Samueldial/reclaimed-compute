@@ -62,7 +62,7 @@ Ordem de implementação:
 - [x] Repositório do projeto criado e versionado no GitHub: [`Samueldial/reclaimed-compute`](https://github.com/Samueldial/reclaimed-compute) (público; `gh` CLI autenticado como `Samueldial`, protocolo `https`; `.gitignore` na home usa allow-list para não versionar `.ssh`, `.cache`, `.claude` etc.)
 - [x] Docker instalado (Docker Engine + Compose plugin, via repositório oficial; usuário `thecounter66` no grupo `docker`)
 - [x] Homepage dashboard (gethomepage.dev) rodando via Docker em `device-old-pc/services/homepage/` — painel de status dos serviços do roadmap, acessível na LAN em `http://192.168.0.59:3030` (porta liberada no `ufw` só para `192.168.0.0/24`)
-- [ ] AdGuard Home / Pi-hole
+- [x] AdGuard Home rodando via Docker em `device-old-pc/services/adguard-home/` — DNS na porta 53 (preso ao IP `192.168.0.59`, não `0.0.0.0`, para não colidir com `systemd-resolved`), painel admin em `http://192.168.0.59:3000`; bloqueio testado e confirmado (blocklist padrão ativa). Ainda **não** configurado como DNS da rede toda no roteador — só validado neste servidor por enquanto.
 - [ ] Tailscale
 - [ ] Home Assistant
 - [ ] Bot Telegram

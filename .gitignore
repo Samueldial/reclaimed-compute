@@ -9,9 +9,18 @@
 !/device-old-pc/
 !/device-old-pc/**
 
-# artefatos de runtime gerados pelos containers, não fazem parte da config do projeto
+# artefatos de runtime/boilerplate gerados pelos containers, não fazem parte da config do projeto
 /device-old-pc/services/*/config/logs/
 /device-old-pc/services/*/config/kubernetes.yaml
+/device-old-pc/services/*/config/bookmarks.yaml
+/device-old-pc/services/*/config/custom.css
+/device-old-pc/services/*/config/custom.js
+/device-old-pc/services/*/config/proxmox.yaml
+
+# AdGuard Home: work/ (querylog, stats) e conf/ (config gerada pelo wizard,
+# inclui hash da senha do admin) — repo é público, isso não deve ser versionado
+/device-old-pc/services/adguard-home/work/
+/device-old-pc/services/adguard-home/conf/
 
 !/device-legion-duel/
 !/device-legion-duel/**

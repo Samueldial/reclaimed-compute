@@ -61,6 +61,7 @@ Ordem de implementação:
 - [x] Claude Code instalado nativamente (`curl -fsSL https://claude.ai/install.sh | bash`), PATH ajustado em `~/.bashrc`
 - [x] Repositório do projeto criado e versionado no GitHub: [`Samueldial/reclaimed-compute`](https://github.com/Samueldial/reclaimed-compute) (público; `gh` CLI autenticado como `Samueldial`, protocolo `https`; `.gitignore` na home usa allow-list para não versionar `.ssh`, `.cache`, `.claude` etc.)
 - [x] Docker instalado (Docker Engine + Compose plugin, via repositório oficial; usuário `thecounter66` no grupo `docker`)
+- [x] Homepage dashboard (gethomepage.dev) rodando via Docker em `device-old-pc/services/homepage/` — painel de status dos serviços do roadmap, acessível na LAN em `http://192.168.0.59:3030` (porta liberada no `ufw` só para `192.168.0.0/24`)
 - [ ] AdGuard Home / Pi-hole
 - [ ] Tailscale
 - [ ] Home Assistant

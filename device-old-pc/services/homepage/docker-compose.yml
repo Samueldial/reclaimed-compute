@@ -4,7 +4,7 @@ services:
     container_name: homepage
     restart: unless-stopped
     environment:
-      - HOMEPAGE_ALLOWED_HOSTS=192.168.0.59:3030,localhost:3030
+      - HOMEPAGE_ALLOWED_HOSTS=192.168.0.59:3030,localhost:3030,100.90.173.40:3030
     ports:
       - "3030:3000"
     volumes:

@@ -63,7 +63,7 @@ Ordem de implementação:
 - [x] Docker instalado (Docker Engine + Compose plugin, via repositório oficial; usuário `thecounter66` no grupo `docker`)
 - [x] Homepage dashboard (gethomepage.dev) rodando via Docker em `device-old-pc/services/homepage/` — painel de status dos serviços do roadmap, acessível na LAN em `http://192.168.0.59:3030` (porta liberada no `ufw` só para `192.168.0.0/24`)
 - [x] AdGuard Home rodando via Docker em `device-old-pc/services/adguard-home/` — DNS na porta 53 (preso ao IP `192.168.0.59`, não `0.0.0.0`, para não colidir com `systemd-resolved`), painel admin em `http://192.168.0.59:3000`; bloqueio testado e confirmado (blocklist padrão ativa). Ainda **não** configurado como DNS da rede toda no roteador — só validado neste servidor por enquanto.
-- [ ] Tailscale
+- [x] Tailscale instalado nativamente (apt), servidor conectado à tailnet como `vostro66` (IP Tailscale `100.90.173.40`). Só este nó, sem subnet router (resto da LAN não está exposto). `ufw` libera toda entrada pela interface `tailscale0` (`ufw allow in on tailscale0`) — a autenticação real fica por conta do próprio Tailscale. Acesso remoto validado: Homepage e SSH acessíveis pelo IP Tailscale com o celular fora da rede local (dados móveis).
 - [ ] Home Assistant
 - [ ] Bot Telegram
 - [ ] Camada de interpretação de logs

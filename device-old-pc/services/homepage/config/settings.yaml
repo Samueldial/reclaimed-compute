@@ -1,0 +1,18 @@
+title: Reclaimed Compute
+theme: dark
+color: slate
+headerStyle: clean
+
+layout:
+  Este servidor:
+    style: row
+    columns: 2
+  Rede & Infraestrutura:
+    style: row
+    columns: 2
+  Automação:
+    style: row
+    columns: 2
+  IA local:
+    style: row
+    columns: 1

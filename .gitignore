@@ -9,6 +9,10 @@
 !/device-old-pc/
 !/device-old-pc/**
 
+# artefatos de runtime gerados pelos containers, não fazem parte da config do projeto
+/device-old-pc/services/*/config/logs/
+/device-old-pc/services/*/config/kubernetes.yaml
+
 !/device-legion-duel/
 !/device-legion-duel/**
 

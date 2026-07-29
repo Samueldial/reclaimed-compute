@@ -1,0 +1,40 @@
+- Este servidor:
+    - Reclaimed Compute (repo):
+        icon: github.png
+        href: https://github.com/Samueldial/reclaimed-compute
+        description: Código e roadmap do projeto
+
+    - Homepage Dashboard:
+        icon: homepage.png
+        container: homepage
+        description: Este próprio painel (status via socket do Docker)
+
+- Rede & Infraestrutura:
+    - AdGuard Home:
+        icon: adguard-home.png
+        href: http://192.168.0.59:3000
+        siteMonitor: http://192.168.0.59:3000
+        description: DNS e bloqueio de anúncios — ainda não implantado (porta a confirmar)
+
+    - Tailscale:
+        icon: tailscale.png
+        href: https://login.tailscale.com/admin/machines
+        description: VPN mesh entre dispositivos — ainda não implantado
+
+- Automação:
+    - Home Assistant:
+        icon: home-assistant.png
+        href: http://192.168.0.59:8123
+        siteMonitor: http://192.168.0.59:8123
+        description: Hub de automação residencial — ainda não implantado
+
+    - Bot Telegram:
+        icon: telegram.png
+        description: Fluxo propose → confirm → apply — ainda não implantado
+
+- IA local:
+    - Ollama:
+        icon: ollama.png
+        href: http://192.168.0.59:11434
+        siteMonitor: http://192.168.0.59:11434
+        description: Inferência local (Qwen2.5 / LFM2.5 / etc.) — ainda não implantado

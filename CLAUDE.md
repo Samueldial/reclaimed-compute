@@ -59,7 +59,8 @@ Ordem de implementação:
 - [x] `unattended-upgrades` configurado
 - [x] `HandleLidSwitch=ignore` configurado em `/etc/systemd/logind.conf` (necessário porque o "servidor" é fisicamente um notebook — sem isso, fechar a tampa suspende a máquina)
 - [x] Claude Code instalado nativamente (`curl -fsSL https://claude.ai/install.sh | bash`), PATH ajustado em `~/.bashrc`
-- [ ] Docker instalado
+- [x] Repositório do projeto criado e versionado no GitHub: [`Samueldial/reclaimed-compute`](https://github.com/Samueldial/reclaimed-compute) (público; `gh` CLI autenticado como `Samueldial`, protocolo `https`; `.gitignore` na home usa allow-list para não versionar `.ssh`, `.cache`, `.claude` etc.)
+- [x] Docker instalado (Docker Engine + Compose plugin, via repositório oficial; usuário `thecounter66` no grupo `docker`)
 - [ ] AdGuard Home / Pi-hole
 - [ ] Tailscale
 - [ ] Home Assistant
